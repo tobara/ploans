@@ -1,9 +1,50 @@
-<% if current_user %>
-  <%= link_to current_user.email, '#' %>
-  <li><%= link_to 'Settings', edit_user_registration_path %></li>
-  <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-  </ul>
-  </li>
-  <% else %>
-    <li><%= link_to "Sign In", new_user_session_path %></li>
-  <% end %>
+<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
+<!-- Stylesheets -->
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon/favicon.png">
+
+<body>
+<!-- Navigation section -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+      <!-- Site name or Site logo. Replace "index.html" with your site link -->
+      <h1><a class="brand" href="index.html"> <%= image_tag 'img/useas1.png' %><%= image_tag 'img/testing.png' %><%= image_tag 'img/useas3.png' %><!-- <img src="img/logo.png" alt="" border="0"> --></a></h1>
+
+     <a href="https://twitter.com/DoctorLoansIO" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @DoctorLoansIO</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      <div class="nav-collapse">
+        <!-- Navigation links -->
+        <ul class="nav">
+          <!-- Each links should be given inside "li" tag -->
+
+
+          <% if current_user %>
+      <li class="has-dropdown">
+      <%= link_to current_user.username, '#' %>
+      <ul class="dropdown">
+        <% if current_user.admin? %>
+          <li><%= link_to 'Admin', admin_bourbons_path %></li>
+        <% end %>
+        <li><%= link_to 'Settings', edit_user_registration_path %></li>
+        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+      </ul>
+    </li>
+    <% else %>
+      <li><%= link_to "Sign In", new_user_session_path %></li>
+    <% end %>
+
+<!-- <!--           <!-- Dropdown link. Use the below markup for dropdown link. -->
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Loan Options <i class="icon-caret-down"></i></a>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apply Now<i class="icon-caret-down"></i></a>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Testimonials <i class="icon-caret-down"></i></a>
+
+      </div>
+    </div>
+  </div>
+</div>
