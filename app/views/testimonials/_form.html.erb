@@ -1,0 +1,13 @@
+<%= form_for [@testimonial] do |f| %>
+  <%= f.label :description%>
+  <%= f.text_area :description, rows: "12" %>
+  <%= f.label :rating, "Rating (1-10)" %>
+  <%= f.text_field :rating %>
+
+  <% if @testimonial.persisted? %>
+    <%= f.submit "Update Testimonial", class: "button small" %>
+  <% else %>
+    <%= f.submit "Add Testimonial", class: "button small" %>
+  <% end %>
+<% end %>
+<%= link_to 'Cancel', :root, class: "button small" %>
