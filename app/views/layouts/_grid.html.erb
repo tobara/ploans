@@ -1,30 +1,51 @@
+    <div class="row">
     <div class="containert">
       <!-- Codrops top bar -->
       <%= javascript_include_tag 'modernizr.custom.js' %> <script type="text/javascript"> </script>
        <%= stylesheet_link_tag    'default.css' %>
        <%= stylesheet_link_tag    'component.css' %>
+
       </header>
+
+
 
 
       <div class="maint">
         <ul id="og-grid" class="og-grid">
             <li>
 
-            <a href="/" data-largesrc="<%= asset_path('1.jpg')%>" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-              <img src="<%= asset_path('thumbs/1.jpg')%>" alt="img01"/>
+            <a href="/" data-largesrc="<%= asset_path('img/bigbox1.png')%>" data-title="The Doctor Loan Program" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+
+
+        <img class="img-responsive" src="<%= asset_path('thumbs/thumb1.png')%>" alt="img01"/>
+        <div class="overlay" alt="img01">
+           <h2>Do you qualify?</h2>
+
+        </div>
 
 
 
-            </a>
+        </a>
+
           </li>
+
+
           <li>
-            <a href="http://cargocollective.com/jaimemartinez/" data-largesrc="<%= asset_path('2.jpg')%>" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-              <img src="<%= asset_path('thumbs/2.jpg')%>" alt="img02"/>
+            <a href="/" data-largesrc="<%= asset_path('img/bigbox1.png')%>" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+            <div class "row1">
+                    <img class="img-responsive" src="<%= asset_path('thumbs/thumb2.png')%>" alt="img02"/>
+        <div class="overlay">
+           <h2>Lets Connect.</h2>
+
+        </div>
+        </div>
             </a>
           </li>
         </ul>
       </div>
+
     </div><!-- /container -->
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  <%= javascript_include_tag 'grid.js' %> <script type="text/javascript"> </script>
     <script>
