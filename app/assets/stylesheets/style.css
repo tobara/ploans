@@ -31,6 +31,14 @@ width:100%;
 padding-top: 100px;
 }
 
+.addpad {
+	margin: auto;
+	width: 100%;
+	padding-left: 200px;
+	padding-right: 200px;
+
+}
+
 
 #hover-cap-4col .thumbnail {
 	position:relative;
