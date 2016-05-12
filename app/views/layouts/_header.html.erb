@@ -1,49 +1,50 @@
-<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
-<!-- Stylesheets -->
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="img/favicon/favicon.png">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+   <%= stylesheet_link_tag    "mbr-bootstrap.min.css" %>
+  <%= stylesheet_link_tag  "mbr-style.css" %>
+  <%= stylesheet_link_tag  "mbr-additional.css" %>
 <body>
-<!-- Navigation section -->
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-      <!-- Site name or Site logo. Replace "index.html" with your site link -->
-      <h1><a class="brand" href="index.html"> <%= image_tag 'img/useas1.png' %><%= image_tag 'img/testing.png' %><%= image_tag 'img/useas3.png' %><!-- <img src="img/logo.png" alt="" border="0"> --></a></h1>
-
-     <a href="https://twitter.com/DoctorLoansIO" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @DoctorLoansIO</a>
+<section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--auto-collapse" id="menu-9">
+    <div class="mbr-navbar__section mbr-section">
+        <div class="mbr-section__container container">
+            <div class="mbr-navbar__container">
+                <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+                    <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
+                        <span class="mbr-brand__logo"><%= image_tag 'logo-310x49-89.png', class: "mbr-navbar__brand-img mbr-brand__img" %> </span>
+                    </span>
+                         <a href="https://twitter.com/DoctorLoansIO" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @DoctorLoansIO</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+                <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
+                <div class="mbr-navbar__column mbr-navbar__menu">
+                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                        <div class="mbr-navbar__column">
+                            <ul class="mbr-navbar__items mbr-navbar__items--right float-left mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active mbr-buttons--only-links"><li class="mbr-navbar__item">
 
-      <div class="nav-collapse">
-        <!-- Navigation links -->
-        <ul class="nav">
-          <!-- Each links should be given inside "li" tag -->
-
-
-          <% if current_user %>
-      <li class="has-dropdown">
-      <%= link_to current_user.username, '#' %>
-      <ul class="dropdown">
-        <li><%= link_to 'Settings', edit_user_registration_path %></li>
-        <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-      </ul>
-    </li>
-    <% else %>
-      <li><%= link_to "Sign In", new_user_session_path %></li>
-    <% end %>
-
-<!-- <!--           <!-- Dropdown link. Use the below markup for dropdown link. -->
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Loan Options <i class="icon-caret-down"></i></a>
-          </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Apply Now<i class="icon-caret-down"></i></a>
+                            <% if current_user %>
 
 
+                            <a class="mbr-buttons__link btn text-white" href="<%= asset_path(current_user_session_path)%>"> <%= current_user.username %></a>
+                            <% else %>
+                            <a class="mbr-buttons__link btn text-white" href="<%= asset_path(new_user_session_path)%>">SIGN IN</a>
+                            <% end %>
 
 
-      </div>
+                            </li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="https://mobirise.com">ABOUT</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="https://mobirise.com">CONTACT</a></li></ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</section>
+
+</section>  <%= javascript_include_tag "jquery.min.js" %> <script type="text/javascript"></script>
+    <%= javascript_include_tag "mbr-bootstrap.min.js" %> <script type="text/javascript"></script>
+      <%= javascript_include_tag "SmoothScroll.js" %> <script type="text/javascript"></script>
+        <%= javascript_include_tag "mbr-script.js" %> <script type="text/javascript"></script>
+
+
+
+

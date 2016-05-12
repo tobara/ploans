@@ -6,7 +6,15 @@ Rails.application.config.assets.precompile += %w( grid.js )
 Rails.application.config.assets.precompile += %w( modernizr.custom )
 Rails.application.config.assets.precompile += %w( default.css )
 Rails.application.config.assets.precompile += %w( component.css )
-
+Rails.application.config.assets.precompile += %w( mbr-additional.css )
+Rails.application.config.assets.precompile += %w( mbr-style.css )
+Rails.application.config.assets.precompile += %w( mbr-bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( SmoothScroll.js )
+Rails.application.config.assets.precompile += %w( mbr-script.js )
+Rails.application.config.assets.precompile += %w( jquery.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )
+Rails.application.config.assets.precompile += %w( bootstrap-responsive.css )
+Rails.application.config.assets.precompile += %w( grid.css )
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
