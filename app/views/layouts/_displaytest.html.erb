@@ -1,0 +1,23 @@
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="testimonials1-15" style="background-color: rgb(255, 255, 255);">
+    <div>
+
+        <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 93px; padding-bottom: 93px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="mbr-section__header">Testimonials</h2>
+                    <ul class="mbr-reviews mbr-reviews--wysiwyg row">
+                        <% @testimonials.each do |testimonial| %>
+                        <li class="mbr-reviews__item col-sm-6 col-md-4">
+                            <div class="mbr-reviews__text"><p class="mbr-reviews__p">“<%= testimonial.description %>”</p></div>
+                            <div class="mbr-reviews__author mbr-reviews__author--short">
+                                <div class="mbr-reviews__author-name"><%= testimonial.user.email %></div>
+                                <div class="mbr-reviews__author-bio">Rating: <%= testimonial.rating %></div>
+                            </div>
+                        </li>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
