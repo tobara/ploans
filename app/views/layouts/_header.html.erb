@@ -24,7 +24,8 @@
                             <% if current_user %>
 
 
-                            <a class="mbr-buttons__link btn text-white" href="<%= asset_path(current_user_session_path)%>"> <%= current_user.username %></a>
+                            <a class="mbr-buttons__link btn text-white" href="<%= asset_path(edit_user_registration_path)%>"> <%= current_user.username %></a>
+                            <a class="mbr-buttons__link btn text-white" href="<%= asset_path(destroy_user_session_path)%>">SIGN OUT</a>
                             <% else %>
                             <a class="mbr-buttons__link btn text-white" href="<%= asset_path(new_user_session_path)%>">SIGN IN</a>
                             <% end %>
