@@ -9,9 +9,11 @@ class WelcomeController < ApplicationController
   end
 
 
-  def authorize_user
-    if !user_signed_in? || !current_user.admin?
-      raise ActionController::RoutingError.new("Not Found")
+  def authorize_user!
+    user = Bourbon.find(params[:id]).user
+    unless current_user == user || current_user.admin?
+      flash[:alert] = "You Are Not Authorized To View The Page"
+      redirect_to after_sign_in_path_for(current_user)
     end
   end
 end
