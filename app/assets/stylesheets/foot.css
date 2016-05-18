@@ -1,0 +1,60 @@
+iframe.twitter-timeline {
+    height: 150px !important;
+
+}
+
+
+.foot {
+  background:#138cd6;
+  color:#fff;
+
+}
+
+.foot hr {
+
+  height:0px;
+  border-top:1px solid #004082;
+  border-bottom:1px solid #002e5d;
+}
+.foot h4 {
+  color:#fff;
+  font-size:19px;
+  margin-bottom:8px;
+  padding-bottom:8px;
+}
+
+.foot .fwidget {
+/*  width: 80%;*/
+  background:#0b629a;
+  color: #d7d7d7;
+  padding:5px 15px;
+  border-radius:5px;
+  margin:10px 0px;
+  height:250px;
+
+}
+.foot .fwidget .twitter-feed small {
+  color: #77b5d5;
+}
+.foot .fwidget .twitter-feed img {
+  float: left;
+  margin: 0px 10px 5px 0px;
+}
+.foot .fwidget .twitter-feed span {
+  margin-left: 25px;
+}
+
+.foot .fwidget .num {
+  text-indent: 80pt;
+  margin-top: -20px;
+
+}
+
+.foot a, .foot a:visited {
+  color:#bbecff;
+  text-decoration:none;
+}
+.foot a:hover {
+  color:#e8f9ff;
+  text-decoration:none;
+}
