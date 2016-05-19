@@ -1195,11 +1195,15 @@ background-color: #237EC2;
 }
 
 .mbr-section .padrows {
-/*  z-index: 200;*/
-  margin-top: -187px;
+
+  margin-top: -184px;
   width: 100%;
 
 }
+
+
+}
+
 .mbr-footer {
   color: #9c9c9c;
   font-size: 13px;
