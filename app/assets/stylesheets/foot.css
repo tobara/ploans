@@ -30,7 +30,8 @@ iframe.twitter-timeline {
   padding:5px 15px;
   border-radius:5px;
   margin:10px 0px;
-  height:250px;
+/*  height:250px;*/
+height:275px;
 
 }
 .foot .fwidget .twitter-feed small {
@@ -51,10 +52,11 @@ iframe.twitter-timeline {
 }
 
 .foot a, .foot a:visited {
-  color:#bbecff;
+  /*color:#bbecff;*/
+  color:#FFFFFF;
   text-decoration:none;
 }
 .foot a:hover {
-  color:#e8f9ff;
+  color:#bbecff;
   text-decoration:none;
 }
