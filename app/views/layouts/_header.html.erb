@@ -31,7 +31,7 @@
                             <% end %>
 
 
-                            </li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="applies/new">APPLY NOW</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="/">CONTACT</a></li></ul>
+                            </li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="<%= asset_path(new_apply_path) %>">APPLY NOW</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="<%= asset_path(new_contact_path) %>">CONTACT</a></li></ul>
 
                         </div>
                     </nav>
@@ -40,12 +40,11 @@
         </div>
     </div>
 </section>
-
 </section>  <%= javascript_include_tag "jquery.min.js" %> <script type="text/javascript"></script>
     <%= javascript_include_tag "mbr-bootstrap.min.js" %> <script type="text/javascript"></script>
       <%= javascript_include_tag "SmoothScroll.js" %> <script type="text/javascript"></script>
         <%= javascript_include_tag "mbr-script.js" %> <script type="text/javascript"></script>
-
+<%= render "layouts/flash" %>
 
 
 
