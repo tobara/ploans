@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  resources :applies
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
 
   devise_scope :user do
+    resources :applies
     root to: 'welcome#index'
       get '/users/sign_out' => 'devise/sessions#destroy'
   end
