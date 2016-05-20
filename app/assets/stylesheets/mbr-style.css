@@ -603,6 +603,7 @@ background-color: #237EC2;
   line-height: 1.5em;
   margin: -10px 0 0;
   text-align: center;
+  color: #09539a;
 }
 @media (min-width: 768px) {
   .mbr-section--short-paddings .mbr-section__container--std-padding {
@@ -1073,6 +1074,7 @@ background-color: #237EC2;
   position: relative;
   text-align: left;
   top: 10px;
+  color: #09539a;
 }
 .mbr-header--std-padding {
   padding-bottom: 41px;
@@ -1622,3 +1624,4 @@ background-color: #237EC2;
 	text-align: center;
 	padding: 0;
 }
+
