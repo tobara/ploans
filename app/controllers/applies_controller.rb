@@ -1,4 +1,5 @@
 class AppliesController < ApplicationController
+  include StatesHelper
   before_action :set_apply, only: [:show, :edit, :update, :destroy]
 
 
@@ -33,17 +34,17 @@ class AppliesController < ApplicationController
   end
 
 
-  def update
-    respond_to do |format|
-      if @apply.update(apply_params)
-        format.html { redirect_to @apply, notice: 'Apply was successfully updated.' }
-        format.json { render :show, status: :ok, location: @apply }
-      else
-        format.html { render :edit }
-        format.json { render json: @apply.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def update
+  #   respond_to do |format|
+  #     if @apply.update(apply_params)
+  #       format.html { redirect_to @apply, notice: 'Apply was successfully updated.' }
+  #       format.json { render :show, status: :ok, location: @apply }
+  #     else
+  #       format.html { render :edit }
+  #       format.json { render json: @apply.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
 
   def destroy
@@ -53,6 +54,9 @@ class AppliesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+
 
   private
 
