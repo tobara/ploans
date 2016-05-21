@@ -26,6 +26,7 @@ class AppliesController < ApplicationController
 
     if @apply.save
       flash[:notice] = "Application submitted added successfully!"
+      ApplyMailer.new_apply(@apply).deliver_later
       redirect_to root_path
     else
       flash.now[:errors] = @apply.errors.full_messages.join(". ")

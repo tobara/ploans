@@ -25,6 +25,7 @@ class ContactsController < ApplicationController
 
     if @contact.save
       flash[:notice] = "Application submitted added successfully!"
+      ContactMailer.new_contact(@contact).deliver_later
       redirect_to root_path
     else
       flash.now[:errors] = @contact.errors.full_messages.join(". ")
@@ -41,6 +42,6 @@ class ContactsController < ApplicationController
 
 
     def contact_params
-      params.require(:contact).permit(:first_name, :email, :question, :contact_method)
+      params.require(:contact).permit(:first_name, :email, :phone_number, :question, :contact_method)
     end
 end

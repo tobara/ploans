@@ -1,7 +1,4 @@
-        <%= javascript_include_tag 'modernizr.custom.js' %> <script type="text/javascript"> </script>
-       <%= stylesheet_link_tag    'default.css' %>
-       <%= stylesheet_link_tag    'component.css' %>
-        <%= stylesheet_link_tag  "grid.css" %>
+
 <br>
 <br>
 
@@ -35,25 +32,27 @@
                             <%= f.text_field :last_name, placeholder: "Last Name*", :class=>"form-control" %>
                             </div>
                             <div class="form-group">
-                            <%= f.text_field :city, placeholder: "City*", :class=>"form-control" %>
-                            </div>
-                            <div class="form-group">
-                            <%= select_tag :state, options_for_select(us_states), prompt: "State*", :class=>"form-control" %>
-                            </div>
-                            <div class="form-group">
-                            <%= f.text_field :purchase_price, placeholder: "Est. Purchase Price*", :class=>"form-control" %>
-                            </div>
-                            <div class="form-group">
-                            <%= f.text_field :down_payment, placeholder: "Est. Down Payment*", :class=>"form-control" %>
-                            </div>
-                            <div class="form-group">
                             <%= f.email_field :email, placeholder: "Email*", :class=>"form-control" %>
                             </div>
                             <div class="form-group">
                             <%= f.phone_field :phone_number, placeholder: "Phone Number*", :class=>"form-control" %>
                             </div>
                             <div class="form-group">
-                            <%= select_tag :contact_method, options_for_select([["Preferred Contact*", ""], "Phone", "Email"]), :class => 'form-control' %>
+                            <%= f.text_field :city, placeholder: "City*", :class=>"form-control" %>
+                            </div>
+                            <div class="form-group">
+                                <%= f.select(:state, options_for_select(us_states), :selected => params[:state], prompt: "State*", :class =>'form-control') %>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                            <%= f.text_field :purchase_price, placeholder: "Est. Purchase Price*", :class=>"form-control" %>
+                            </div>
+                            <div class="form-group">
+                            <%= f.text_field :down_payment, placeholder: "Est. Down Payment*", :class=>"form-control" %>
+                            </div>
+
+                            <div class="form-group">
+                                   <%= f.select(:contact_method, options_for_select(["Phone", "Email"]), :selected => params[:contact_method], prompt: "Preferred Contact*", :class =>'form-control') %>
                             </div>
                             <br>
                             <br>
