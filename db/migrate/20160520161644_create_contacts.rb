@@ -5,7 +5,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :email, null: false
       t.string :phone_number
       t.text :question, null: false
-      t.string :contact_method, null: false
+      t.string :contact_method
     end
   end
 end

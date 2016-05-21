@@ -20,12 +20,12 @@ ActiveRecord::Schema.define(version: 20160520161644) do
     t.string   "first_name",     null: false
     t.string   "last_name",      null: false
     t.string   "city",           null: false
-    t.string   "state",          null: false
+    t.string   "state"
     t.integer  "purchase_price", null: false
     t.integer  "down_payment",   null: false
     t.string   "email",          null: false
     t.string   "phone_number",   null: false
-    t.string   "contact_method", null: false
+    t.string   "contact_method"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20160520161644) do
     t.string "email",          null: false
     t.string "phone_number"
     t.text   "question",       null: false
-    t.string "contact_method", null: false
+    t.string "contact_method"
   end
 
   create_table "testimonials", force: :cascade do |t|
