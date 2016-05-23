@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "http://www.example.com"
+SitemapGenerator::Sitemap.default_host = "http://www.doctorloans.io"
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
@@ -24,4 +24,16 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
+  Apply.find_each do |apply|
+    add apply_path(apply), :lastmod => apply.updated_at
+  end
+  Contact.find_each do |contact|
+    add contact_path(contact), :lastmod => contact.updated_at
+  end
+  Loan.find_each do |loan|
+    add loan_path(loan), :lastmod => loan.updated_at
+  end
+  Testimonial.find_each do |testimonial|
+    add testimonial_path(testimonial), :lastmod => testimonial.updated_at
+  end
 end
