@@ -13,6 +13,9 @@ class AppliesController < ApplicationController
 
 
   def new
+        set_meta_tags title: 'DoctorLoans.io:  Apply Now',
+              description: 'The DoctorLoans.io Apply Page',
+              keywords: 'mortgage, refinance, Apply now, pre approval, pre qualify'
     @apply = Apply.new
   end
 

@@ -31,7 +31,8 @@ gem 'rails_real_favicon'
 gem 'sitemap_generator'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+# meta tags seo
+gem 'meta-tags'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
