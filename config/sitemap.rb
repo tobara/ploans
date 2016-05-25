@@ -24,11 +24,9 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
-
+add root_path, :priority => 0.7, :changefreq => 'daily'
 add new_apply_path, :priority => 0.7, :changefreq => 'daily'
-
+add new_contact_path, :priority => 0.7, :changefreq => 'daily'
 add doctor_path, :priority => 0.7, :changefreq => 'daily'
 add other_path, :priority => 0.7, :changefreq => 'daily'
-
-
 end
