@@ -29,6 +29,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_real_favicon'
 #sitemap
 gem 'sitemap_generator'
+#sprockets image compressor
+gem 'sprockets-image_compressor'
 # Use Unicorn as the app server
 # gem 'unicorn'
 # meta tags seo
