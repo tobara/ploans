@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  resources :privacy, only: [:index]
   resources :applies do
   end
   resources :contacts do
