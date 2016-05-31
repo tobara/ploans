@@ -17,6 +17,8 @@ Rails.application.config.assets.precompile += %w( bootstrap-responsive.css )
 Rails.application.config.assets.precompile += %w( grid.css )
 Rails.application.config.assets.precompile += %w( foot.self-bc2a3f25235a8cb54543de06e0480947315819a9.css )
 Rails.application.config.assets.precompile += %w( analytics.js )
+Rails.application.config.assets.precompile += %w( default.css )
+Rails.application.config.assets.precompile += %w( component.css )
 
 
 
