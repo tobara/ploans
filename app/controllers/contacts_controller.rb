@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show]
-
+  add_breadcrumb "Home", :root_path, :title => "Back to DoctorLoans.io Home Page"
 
   def index
     @contacts = Contact.all
@@ -12,6 +12,7 @@ class ContactsController < ApplicationController
 
 
   def new
+    add_breadcrumb "Contact Us"
     @contact = Contact.new
   end
 

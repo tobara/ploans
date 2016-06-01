@@ -7,10 +7,16 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
+                        <div class="mbr-header--left mbr-header--std-padding">
+                        <%= render_breadcrumbs %>
+                        </div>
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
+
                             <h2 class="mbr-header__text" id="applies1-15">Apply Now</h2>
                             <hr>
+
                         </div>
+
 
 <%= form_for(@apply) do |f| %>
   <% if @apply.errors.any? %>
