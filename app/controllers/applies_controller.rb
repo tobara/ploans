@@ -1,4 +1,5 @@
 class AppliesController < ApplicationController
+  add_breadcrumb "Home", :root_path, :title => "Back to DoctorLoans.io Home Page"
   include StatesHelper
   before_action :set_apply, only: [:show, :edit, :update, :destroy]
 
@@ -13,9 +14,10 @@ class AppliesController < ApplicationController
 
 
   def new
-        set_meta_tags title: 'DoctorLoans.io:  Apply Now',
-              description: 'The DoctorLoans.io Apply Page',
-              keywords: 'mortgage, refinance, Apply now, pre approval, pre qualify'
+    add_breadcrumb "Apply Now"
+    set_meta_tags title: 'DoctorLoans.io:  Apply Now',
+          description: 'The DoctorLoans.io Apply Page',
+          keywords: 'mortgage, refinance, Apply now, pre approval, pre qualify'
     @apply = Apply.new
   end
 

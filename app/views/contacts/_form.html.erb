@@ -3,10 +3,15 @@
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
+                                                <div class="mbr-header--left mbr-header--std-padding">
+                        <%= render_breadcrumbs %>
+                        </div>
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
+
                             <h2 class="mbr-section__header" id="contacts1-15">Contact Us</h2>
                             <hr>
                         </div>
+
 
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
