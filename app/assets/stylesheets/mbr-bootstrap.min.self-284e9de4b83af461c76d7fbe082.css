@@ -1643,7 +1643,7 @@ to{transform:rotate(359deg);}
 .btn-wrap{white-space:normal;}
 @media (max-width:767px){.btn-xs-lg{padding:16px 27px;font-size:18px;line-height:1.3333333;border-radius:0px;font-size:14px;}
 }
-.btn-decorator .btn:after{-webkit-transform:scale(0, 1);-ms-transform:scale(0, 1);-o-transform:scale(0, 1);transform:scale(0, 1);-webkit-transform-origin:center center 0px;-moz-transform-origin:center center 0px;-ms-transform-origin:center center 0px;transform-origin:center center 0px;-webkit-transition:all 0.15s ease-out 0s;-o-transition:all 0.15s ease-out 0s;transition:all 0.15s ease-out 0s;border-bottom:2px solid;content:"";display:block;height:1px;left:-1px;margin-top:-3px;position:relative;top:3px;width:100%;}
+/*.btn-decorator .btn:after{-webkit-transform:scale(0, 1);-ms-transform:scale(0, 1);-o-transform:scale(0, 1);transform:scale(0, 1);-webkit-transform-origin:center center 0px;-moz-transform-origin:center center 0px;-ms-transform-origin:center center 0px;transform-origin:center center 0px;-webkit-transition:all 0.15s ease-out 0s;-o-transition:all 0.15s ease-out 0s;transition:all 0.15s ease-out 0s;border-bottom:2px solid;content:"";display:block;height:1px;left:-1px;margin-top:-3px;position:relative;top:3px;width:100%;}*/
 .btn-decorator .btn:hover:after,
 .btn-decorator .btn:focus:after{-webkit-transform:scale(1, 1);-ms-transform:scale(1, 1);-o-transform:scale(1, 1);transform:scale(1, 1);}
 .fade{opacity:0;-webkit-transition:opacity 0.15s linear;-o-transition:opacity 0.15s linear;transition:opacity 0.15s linear;}
