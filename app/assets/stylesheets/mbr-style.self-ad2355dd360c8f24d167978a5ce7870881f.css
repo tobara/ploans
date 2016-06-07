@@ -484,3 +484,12 @@ to{-webkit-transform:translateY(0);transform:translateY(0);}
 .mbr-number--inverse-price .mbr-number__value{padding-left:0.28em;}
 .mbr-number--inverse-price .mbr-number__right{display:inline;}
 .engine{position:absolute;text-indent:-2400px;text-align:center;padding:0;}
+
+
+.mbr-buttons__btn .post{
+  border : solid 2px #ededed;
+  color : #ffffff;
+  padding : 1px 17px;
+  background-color : #0a66c9;
+
+}
