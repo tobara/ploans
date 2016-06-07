@@ -28,7 +28,6 @@ gem 'rails_12factor'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # favicon
-gem 'rails_real_favicon'
 #sitemap
 gem 'sitemap_generator'
 #sprockets image compressor
@@ -40,6 +39,7 @@ gem 'meta-tags'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'puma'
+gem 'rack-zippy'
 
 group :development, :test do
   gem 'pry-rails'
