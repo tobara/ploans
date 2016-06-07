@@ -39,7 +39,7 @@ gem 'meta-tags'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'puma'
-gem 'rack-zippy'
+
 
 group :development, :test do
   gem 'pry-rails'
