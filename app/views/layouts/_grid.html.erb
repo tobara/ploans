@@ -45,8 +45,8 @@
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" style="padding-bottom: 93px;">
 
                     <figure class="mbr-figure">
-                    <a href="<%= asset_path(doctor_path)%>">
-                    <img src="<%= asset_path('thumbs/thumb1.png')%>" class="mbr-figure__img">
+                    <a href="<%= asset_path(doctor_path) %>">
+                    <%= image_tag 'thumbs/thumb1.png', class: "mbr-figure__img", alt: 'doctor loan link logo' %>
                         <figcaption>
 
                         <p>Do you qualify?</p>
@@ -66,7 +66,7 @@
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" style="padding-bottom: 93px;">
                     <figure class="mbr-figure">
                     <a href="<%= asset_path(new_apply_path) %>">
-                    <img src="<%= asset_path('thumbs/thumb2.png')%>" class="mbr-figure__img">
+                    <%= image_tag 'thumbs/thumb2.png', class: "mbr-figure__img", alt: 'apply now link logo' %>
                         <figcaption>
 
                         <p>Let's get started.</p>
@@ -83,7 +83,7 @@
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" style="padding-bottom: 93px;">
                     <figure class="mbr-figure">
                     <a href="<%= asset_path(other_path) %>">
-                    <img src="<%= asset_path('thumbs/thumb3.png')%>" class="mbr-figure__img">
+                    <%= image_tag 'thumbs/thumb3.png', class: "mbr-figure__img", alt: 'other loan link logo' %>
                         <figcaption>
 
                         <p>Not a Doctor?</p>
@@ -100,7 +100,7 @@
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" style="padding-bottom: 93px;">
                     <figure class="mbr-figure">
                     <a href="<%= asset_path(new_contact_path) %>">
-                    <img src="<%= asset_path('thumbs/thumb4.png')%>" class="mbr-figure__img">
+                    <%= image_tag 'thumbs/thumb4.png', class: "mbr-figure__img", alt: 'contact us link logo' %>
                         <figcaption>
 
                         <p>Contact Us.</p>
