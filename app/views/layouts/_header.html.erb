@@ -11,10 +11,10 @@
             <div class="mbr-navbar__container">
                 <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
-                        <span class="mbr-brand__logo"><%= link_to root_path do %><%= image_tag 'logo-310x49-89-f77c5cb621d68ef8cdf76e21f776d39604f.png', class: "mbr-navbar__brand-img mbr-brand__img" %> <% end %></span>
+                        <span class="mbr-brand__logo"><%= link_to root_path do %><%= image_tag 'logo-310x49-89-f77c5cb621d68ef8cdf76e21f776d39604f.png', class: "mbr-navbar__brand-img mbr-brand__img", alt: 'logo' %> <% end %></span>
                     </span>
                          <a href="https://twitter.com/DoctorLoansIO" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @DoctorLoansIO</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<%= javascript_include_tag "jquery.min.js" %> <script type="text/javascript"></script>
                 </div>
                 <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
                 <div class="mbr-navbar__column mbr-navbar__menu">

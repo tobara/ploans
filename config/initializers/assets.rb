@@ -19,7 +19,7 @@ Rails.application.config.assets.precompile += %w( foot.self-bc2a3f25235a8cb54543
 Rails.application.config.assets.precompile += %w( analytics.js )
 Rails.application.config.assets.precompile += %w( default.css )
 Rails.application.config.assets.precompile += %w( component.css )
-
+Rails.application.config.assets.precompile += %w( twitter.js )
 
 
 # Add additional assets to the asset load path
