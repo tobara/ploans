@@ -19,3 +19,4 @@ a{color:#555;text-decoration:none;}
 .codrops-top a:hover{background:rgba(255,255,255,0.8);color:#000;}
 .codrops-top span.right{float:right;}
 .codrops-top span.right a{float:left;display:block;}
+span[itemprop="description"]{color:#237EC2;}
