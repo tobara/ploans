@@ -1,0 +1,23 @@
+{
+	"name": "DoctorLoans.io",
+	"icons": [
+		{
+			"src": "/assets/favicon/android-chrome-36x36-ea58ab3b07975a3e1d41fa018ef0fe1b5271f4f3b19f0de9f42ba7531090c353.png",
+			"sizes": "36x36",
+			"type": "image\/png",
+			"density": 0.75
+		},
+		{
+			"src": "/assets/favicon/android-chrome-48x48-b93aceb20d63249473381df38cd6aaa9b41247fa32c845326cf12dd301be4a79.png",
+			"sizes": "48x48",
+			"type": "image\/png",
+			"density": 1
+		},
+		{
+			"src": "/assets/favicon/android-chrome-72x72-0d386a650e300898eec8a0228a46b7a810e87130f812d53555d2dd0af635cb7c.png",
+			"sizes": "72x72",
+			"type": "image\/png",
+			"density": 1.5
+		}
+	]
+}
