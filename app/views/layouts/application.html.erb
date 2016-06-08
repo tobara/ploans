@@ -5,7 +5,7 @@
 <%= render 'favicon' %>
   <%= display_meta_tags %>
 
-
+<%= javascript_include_tag "analytics.js" %> <script type="text/javascript"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
   <meta name="google-site-verification" content="TKZfX2x3mlU7vMJ2rMd3fV-aeBxK-U_mosqj5L80Xyc" />
 </head>
 <body>
-  <%= javascript_include_tag "analytics.js" %> <script type="text/javascript"></script>
+
 <%= render 'layouts/header' %>
 
 <%= yield %>
