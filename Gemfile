@@ -38,7 +38,7 @@ gem 'sprockets-image_compressor'
 gem 'meta-tags'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'puma'
+gem "passenger"
 
 
 group :development, :test do
