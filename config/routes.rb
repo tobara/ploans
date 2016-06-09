@@ -6,13 +6,13 @@ Rails.application.routes.draw do
   end
   resources :testimonials do
   end
-  scope :loans, :controller => 'loans' do
-  get 'doctor'
-  get 'other'
+  scope :mortgages, :controller => 'mortgages' do
+    get 'doctor', :path => '/physician-doctor-dentist/loan-program-guidelines'
+    get 'other', :path => '/FHA-Conv-Jumbo/loan-program-guidelines'
 end
-  devise_for :users
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}
   devise_scope :user do
     root to: 'welcome#index'
-      get '/users/sign_out' => 'devise/sessions#destroy'
+      get '/logout' => 'devise/sessions#destroy'
   end
 end
