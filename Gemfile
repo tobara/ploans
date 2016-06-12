@@ -39,6 +39,7 @@ gem 'meta-tags'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem "passenger"
+gem 'heroku-deflater'
 
 
 group :development, :test do
