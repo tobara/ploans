@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   before_action :authorize_user, except: [:index, :show]
+  caches_page :index
 
   def index
     set_meta_tags title: 'DoctorLoans.io:  The Home Loan Resource for Physicians',

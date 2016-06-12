@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deploy"
   # Code is not reloaded between requests.
   config.cache_classes = true
   # Eager load code on boot. This eager loads most of Rails and
