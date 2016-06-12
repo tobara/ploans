@@ -40,7 +40,7 @@ gem 'meta-tags'
 # gem 'capistrano-rails', group: :development
 gem "passenger"
 gem 'heroku-deflater'
-
+gem 'actionpack-page_caching'
 
 group :development, :test do
   gem 'pry-rails'
