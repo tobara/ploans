@@ -86,7 +86,7 @@ http {
 
         ### END your own configuration options ###
     }
-
+    passenger_pre_start <%= listen_url(app) %>;
     <% end %>
 
     <%= include_passenger_internal_template('footer.erb', 4) %>
