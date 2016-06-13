@@ -41,7 +41,7 @@ gem 'meta-tags'
 gem "passenger"
 gem 'heroku-deflater'
 gem 'actionpack-page_caching'
-gem 'rails_db'
+# gem 'rails_db'
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
