@@ -94,6 +94,7 @@ html{position:relative;min-height:100%;}
 .mbr-navbar--freeze.mbr-navbar--collapsed.mbr-navbar--open .mbr-navbar__hamburger:hover{color:#fff !important;}
 .mbr-navbar--sticky .mbr-navbar__section{position:fixed;}
 .mbr-navbar--absolute{position:absolute;}
+.mbr-section__header_news{line-height:1.5em;text-align: center;color:#09539a}
 @media (max-width:480px){.mbr-navbar--absolute.mbr-navbar[id^=menu-]{position:absolute;}
 }
 .mbr-navbar--transparent .mbr-navbar__section{background:none;}
