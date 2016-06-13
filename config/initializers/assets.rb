@@ -20,6 +20,12 @@ Rails.application.config.assets.precompile += %w( analytics.js )
 Rails.application.config.assets.precompile += %w( default.css )
 Rails.application.config.assets.precompile += %w( component.css )
 Rails.application.config.assets.precompile += %w( twitter.js )
+Rails.application.config.assets.precompile += %w( article.css )
+Rails.application.config.assets.precompile += %w( article_style.css )
+Rails.application.config.assets.precompile += %w( jquery.jscrollpane.css )
+Rails.application.config.assets.precompile += %w( jquery.easing.1.3.js )
+Rails.application.config.assets.precompile += %w( jquery.mousewheel.js )
+Rails.application.config.assets.precompile += %w( jquery.contentcarousel.js )
 
 
 # Add additional assets to the asset load path
