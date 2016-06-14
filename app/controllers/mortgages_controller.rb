@@ -17,4 +17,11 @@ add_breadcrumb "Home", :root_path, :title => "Back to DoctorLoans.io Home Page"
               keywords: 'lender, bank loan, refinance, purchase a home, FHA, conforming, conventional loan, Jumbo, mortgage rates'
     render :other_index
   end
+
+  def rates_in_free_fall
+    add_breadcrumb "Mortgage Market News"
+    set_meta_tags title: 'DoctorLoans.io:  Mortgage News',
+              description: 'The DoctorLoans.io: Mortgage News',
+              keywords: 'rate, dti, debt to income, loan to value, ltv, discount points, 30 year mortgage rate, refinance, purchase a home, home equity line, conforming, heloc, 2nd mortgage, first time home buyer'
+  end
 end

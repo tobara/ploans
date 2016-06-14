@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   scope :mortgages, :controller => 'mortgages' do
     get 'doctor', :path => '/physician-doctor-dentist/loan-program-guidelines'
     get 'other', :path => '/FHA-Conv-Jumbo/loan-program-guidelines'
+    get 'rates_in_free_fall', :path => '/mortgage-insight/articles/rates-in-free-fall'
 end
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}
   devise_scope :user do
