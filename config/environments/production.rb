@@ -8,6 +8,10 @@ config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deplo
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
+  config.serve_static_assets = true
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  config.assets.compile = true
+
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
@@ -28,7 +32,6 @@ config.action_controller.page_cache_directory = "#{Rails.root.to_s}/public/deplo
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
