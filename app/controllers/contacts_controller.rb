@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   before_action :set_contact, only: [:show]
-  add_breadcrumb "Home", :root_path, :title => "Back to DoctorLoans.io Home Page"
+  add_breadcrumb "Home", :root_path, :title => "Back to Doctor Loans IO Home Page"
 
   def index
     @contacts = Contact.all
@@ -13,8 +13,8 @@ class ContactsController < ApplicationController
 
   def new
     add_breadcrumb "Contact Us"
-    set_meta_tags title: 'DoctorLoans.io:  Contact Us.  Mortgage questions?  Inquire here.',
-              description: 'The DoctorLoansIO Contact Page',
+    set_meta_tags title: 'Doctor Loans IO:  Contact Us.  Mortgage questions?  Inquire here.',
+              description: 'The Doctor Loans IO Contact Page',
               keywords: 'physician loans, physician loan, physician personal loans, loans for physicians, resident physician loans, physician loan program, loans for resident physicians, personal loans for physicians, regions bank physician loan, physician loan rates, business loans for physicians,exclusive physician loans, physician loan interest rate, physician loans rates, physician relocation loan, physician practice loans, home loans for dentists, mortgages for dentists, dentist mortgage'
     @contact = Contact.new
   end
