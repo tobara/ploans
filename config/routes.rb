@@ -11,9 +11,14 @@ Rails.application.routes.draw do
     get 'other', :path => '/FHA-Conv-Jumbo/loan-program-guidelines'
     get 'rates_in_free_fall', :path => '/mortgage-insight/articles/rates-in-free-fall'
 end
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}
+   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}, controllers: {
+        sessions: 'users/sessions', :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}
+      }
+
   devise_scope :user do
     root to: 'welcome#index'
       get '/logout' => 'devise/sessions#destroy'
   end
+
+
 end
