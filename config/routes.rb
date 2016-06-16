@@ -10,7 +10,8 @@ Rails.application.routes.draw do
     get 'doctor', :path => '/physician-doctor-dentist/loan-program-guidelines'
     get 'other', :path => '/FHA-Conv-Jumbo/loan-program-guidelines'
     get 'rates_in_free_fall', :path => '/mortgage-insight/articles/rates-in-free-fall'
-end
+    get 'home_values', :path => '/mortgage-insight/articles/underwater-sink-or-swim'
+  end
    devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}, controllers: {
         sessions: 'users/sessions', :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}
       }
