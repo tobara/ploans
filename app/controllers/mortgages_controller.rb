@@ -19,9 +19,16 @@ add_breadcrumb "Home", :root_path, :title => "Back to Doctor Loans IO Home Page"
   end
 
   def rates_in_free_fall
-    add_breadcrumb "Mortgage Market News"
+    add_breadcrumb "Mortgage Market News - Rates in Free Fall"
     set_meta_tags title: 'Doctor Loans IO:  Mortgage News',
               description: 'The Doctor Loans IO: Mortgage News',
               keywords: 'rate, dti, debt to income, loan to value, ltv, discount points, 30 year mortgage rate, refinance, purchase a home, home equity line, conforming, heloc, 2nd mortgage, first time home buyer'
+  end
+
+  def home_values
+    add_breadcrumb "Mortgage Market News"
+    set_meta_tags title: 'Doctor Loans IO:  Mortgage News - Sink or Swim',
+              description: 'The Doctor Loans IO: Mortgage News',
+              keywords: 'mortgage, underwater, refinance, sink or swim, loan to value, high ltv'
   end
 end
