@@ -7,6 +7,7 @@ class WelcomeController < ApplicationController
               description: 'The Doctor Loans IO Home Page',
               keywords: 'doctor loan, physician loans, physician loan, physician personal loans, loans for physicians, resident physician loans, physician loan program, loans for resident physicians, personal loans for physicians, regions bank physician loan, physician loan rates, business loans for physicians,exclusive physician loans, physician loan interest rate, physician loans rates, physician relocation loan, physician practice loans, home loans for dentists, mortgages for dentists, dentist mortgage'
     @testimonials = Testimonial.all
+    @articles = Article.all
     render :index
     # @user_rating = @testimonials.average(:rating).to_i
   end

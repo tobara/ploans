@@ -34,9 +34,15 @@
             <p style="text-indent:25px;">If you’re a professional in the medical field, who is looking to buy a home, I can help. The Doctor Loan was designed to meet your specific needs, and may make it easier for you to qualify for a mortgage.  The Doctor Loan is a sensible choice for medical residents and licensed, practicing eligible medical professionals, including dentists. Contact me to learn more. I can have a mortgage professional contact you immediately.  They will be there to help you through the whole process, from application till closing.  I can promise you whether your after a niche program or more pleasant purchase experience from a conventional loan program, my mortgage brokers will have you telling your friends that there is hope for those seeking a smooth mortgage process, despite the industry's hurdles of today. </p>
             <br>
             <br>
-            Check out our first of many publications in Mortgage Insights:  <%= link_to 'Rates In Free Fall', rates_in_free_fall_path, alt: 'rates in free fall article link', style: 'font-family:bold;' %>
+
+                            <% @articles.each do |article| %>
+
+
+
+            Mortgage Insights:  <%= link_to "#{article.title}", article_path(article.id), alt: "#{article.title} article link", style: 'font-family:bold;' %>
             <br>
-            New Publication in Mortgage Insights: <%= link_to 'Sink or Swim', home_values_path, alt: 'home values article path', style: 'font-family:bold;' %>
+            <% end %>
+
 
 
 
