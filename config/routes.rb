@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :privacy, only: [:index]
-  resources :articles, only: [:show]
+  # resources :articles, only: [:show]
   resources :applies do
   end
   resources :contacts do
@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'rates_in_free_fall', :path => '/mortgage-insight/articles/rates-in-free-fall'
     get 'home_values', :path => '/mortgage-insight/articles/underwater-sink-or-swim'
   end
+  DynamicRouter.load
 
    devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}, controllers: {
         sessions: 'users/sessions', :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout', :sign_up => 'signup'}
