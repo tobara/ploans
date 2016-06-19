@@ -50,7 +50,7 @@
   position:absolute;
   top:10px;
   right:10px;
-  background:#fff url(../images/cross.png) no-repeat center center;
+  background:#fff url("/assets/cross.png") no-repeat center center;
   width:27px;
   height:27px;
   text-indent:-9000px;
