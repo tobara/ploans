@@ -28,6 +28,7 @@ Rails.application.config.assets.precompile += %w( jquery.mousewheel.js )
 Rails.application.config.assets.precompile += %w( jquery.contentcarousel.js )
 Rails.application.config.assets.precompile += %w( blog-posts.css )
 Rails.application.config.assets.precompile += %w( reset.css )
+Rails.application.config.assets.precompile += %w( fb.js )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

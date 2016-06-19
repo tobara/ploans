@@ -40,6 +40,10 @@
                 <hr>
 
                 <!-- Blog Comments -->
+                <div id="fb-root"></div>
+                <%= javascript_include_tag 'fb.js' %>
+                <div class="fb-comments" data-href=""#{@article.article_route} data-numposts="5"></div>
+
             </div>
         </div>
     </div>

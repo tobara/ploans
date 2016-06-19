@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :privacy, only: [:index]
-  # resources :articles, only: [:show]
   resources :applies do
   end
   resources :contacts do
@@ -10,8 +9,6 @@ Rails.application.routes.draw do
   scope :mortgages, :controller => 'mortgages' do
     get 'doctor', :path => '/physician-doctor-dentist/loan-program-guidelines'
     get 'other', :path => '/FHA-Conv-Jumbo/loan-program-guidelines'
-    get 'rates_in_free_fall', :path => '/mortgage-insight/articles/rates-in-free-fall'
-    get 'home_values', :path => '/mortgage-insight/articles/underwater-sink-or-swim'
   end
   DynamicRouter.load
 
