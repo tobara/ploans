@@ -1,3 +1,5 @@
+
+<div class="mbr-section__row row">
     <%= stylesheet_link_tag 'article.css' %>
     <%= stylesheet_link_tag 'article_style.css' %>
     <%= stylesheet_link_tag 'jquery.jscrollpane.css', media: "all" %>
@@ -19,8 +21,22 @@
 
                 <span> <%= article.line_preview %>... </span>
               </h4>
-                <a href="#" class="ca-more">more...</a>
-            </div>
+
+              <script type="text/javascript">
+              if ($(window).innerWidth() < 699) {
+                var strLink = "<%= article.article_route %>"
+                document.getElementById("art").setAttribute("href",strLink);
+                alert(window.Innerwidth);
+              }
+              else {
+                var atrLink = "#"
+                document.getElementById("art").setAttribute("href",atrLink);
+              }
+              </script>
+              <a href="" id="art" class="ca-more">more...</a></div>
+
+
+
             <div class="ca-content-wrapper">
               <div class="ca-content">
                 <h6><%= article.title %></h6>
@@ -55,3 +71,5 @@
   <%= stylesheet_link_tag  "mbr-style.self-ad2355dd360c8f24d167978a5ce7870881f.css" %>
   <%= stylesheet_link_tag  "mbr-additional.self-8e02c2e8282b5fb02058143efbb2d0.css" %>
   <%= stylesheet_link_tag    'default.self-31cb51844143a8b6001890d2c0de95a75fd1b.css' %>
+
+</div>
