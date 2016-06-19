@@ -42,6 +42,8 @@ gem "passenger"
 gem 'heroku-deflater'
 gem 'actionpack-page_caching'
 # gem 'rails_db'
+
+gem 'tty-screen'
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
