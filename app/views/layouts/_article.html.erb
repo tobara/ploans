@@ -24,11 +24,11 @@
 
               <script type="text/javascript">
               if ($(window).innerWidth() < 699) {
-                var strLink = "<%= article.article_route %>"
+                var strLink = "<%= "#{article.article_route}" %>"
                 document.getElementById("art").setAttribute("href",strLink);
-                alert(window.Innerwidth);
-              }
-              else {
+
+                alert(window.innerWidth);
+              } else {
                 var atrLink = "#"
                 document.getElementById("art").setAttribute("href",atrLink);
               }
