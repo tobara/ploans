@@ -22,12 +22,14 @@
                 <span> <%= article.line_preview %>... </span>
               </h4>
 
-              <script type="text/javascript">
-              if ($(window).innerWidth() < 699) {
+               <script type="text/javascript">
+                var windowSize = window.innerWidth;
+              if (windowSize < 699) {
                 var strLink = "<%= "#{article.article_route}" %>"
+                var mwClass = "ca-mobile-more"
                 document.getElementById("art").setAttribute("href",strLink);
 
-                alert(window.innerWidth);
+                document.getElementById("art").setAttribute("class",mwClass);
               } else {
                 var atrLink = "#"
                 document.getElementById("art").setAttribute("href",atrLink);
