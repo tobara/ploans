@@ -1086,7 +1086,7 @@ background-color: #237EC2;
   display: block;
   font-size: 25px;
   font-weight: bold;
-  letter-spacing: 6px;
+/*  letter-spacing: 6px;*/
   line-height: 1.5em;
   margin: 0;
 }
