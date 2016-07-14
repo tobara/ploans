@@ -11,7 +11,7 @@
                     <div class="col-sm-8 col-sm-offset-2">
                     <%= render_breadcrumbs %>
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
-                            <h2 class="mbr-header__text">LOG IN </h2>
+                            <h2 class="mbr-header__text" id="h2_correction">LOG IN </h2>
                             <hr>
                         </div>
 
@@ -21,10 +21,12 @@
 
                             <%= f.email_field :email, placeholder: "Email* ", :class=>"form-control" %>
                             </div>
+                            OR
                             <div class="form-group">
 
                             <%= f.text_field :username, autofocus: true, placeholder: "Username*", :class=>"form-control" %>
                             </div>
+                            <hr id="hr_form">
                             <div class="form-group">
 
                             <%= f.password_field :password, placeholder: "Password*", autocomplete: "off", :class=>"form-control" %>
