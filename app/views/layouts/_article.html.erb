@@ -1,16 +1,15 @@
 
-<div class="mbr-section__row row">
+<div class="mbr-section__row row" id="article_container">
     <%= stylesheet_link_tag 'article.css' %>
     <%= stylesheet_link_tag 'article_style.css' %>
     <%= stylesheet_link_tag 'jquery.jscrollpane.css', media: "all" %>
-<meta name=viewport content="width=device-width, initial-scale=1">
-    <% n = 1 %>
+
     <div class="container">
-      <h1 class="mbr-section__header_news">Mortgage Insights</h1>
+      <h2 id="h2_correction">Mortgage Insights</h2>
       <div id="ca-container" class="ca-container">
         <div class="ca-wrapper">
          <% @articles.each do |article| %>
-          <div class="ca-item ca-item-<%= n %>">
+          <div class="ca-item ca-item">
             <div class="ca-item-main">
             <br>
               <div class="ca-icon" style="background:url(<%= asset_path("#{article.landing_img_path}") %>) no-repeat center center;"></div>
@@ -54,7 +53,7 @@
               </div>
             </div>
           </div>
-         <% n += 1 %>
+
           <% end %>
         </div>
       </div>
