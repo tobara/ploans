@@ -22,3 +22,18 @@ Article.create(title: 'The Doctor Loan Part', content: '<p class="lead">Most doc
                 </p> <p>This low risk percentile is the reasoning behind the doctor loan.  Physicians can obtain more with less.  A standard home buyer looking for a mortgage above 417,000.00, might be forced to overcome hurdles such as 6 months liquid reserves (principal + interest + taxes + insurance payments), 20%\ minimum down payment, 740 minimum fico score, minimum two year work history at the same employer and position.</p>
                 <p>Meanwhile, a physician can apply for the very same loan amount and only be required to have 1 to 3 months reserves, 5%\ minimum down payment with NO private mortgage insurance, 720 minimum fico score, no work history ( 2 year education history can be used), as long as they provide proof they will be starting their employment within 60 days of the closing date of their loan.</p>
                 <p>This is a tremendous advantage, that many medical professionals are completely unaware of.  Please feel free to leave any commentary or questions related to this program.  I will gladly try to answer any questions, or reveal further insight.</p>', img_path: 'news/doctor_article_show.jpg', article_route: '/mortgage-insights/articles/the-doctor-loan-part-II', line_preview: 'Most doctors when obtaining financing don’t understand that they have to go the traditional route.', para_preview: 'Most doctors when obtaining financing don’t understand that they have to go the traditional route.  Due to almost guaranteed contract employment along with above than median salaries, doctors have an advantage over your typical consumer.  Accompany that with the fact that statistically anyone with a graduate degree or higher (i.e. doctoral degree), is almost guaranteed to have higher wages and accumulate more liquid assets in their lifetime than professionals with less schooling', landing_img_path: 'news/doctor_article_show.jpg')
+User.create(username: 'bolleddulaj', email: 'bolleddulaj@gmail.com', password: 'Cardinal88!')
+@test = Testimonial.new
+@test.attributes = { :user_id => 1, :description => 'It’s our absolute pleasure to endorse Marco, the loan officer through DoctorLoans, for his outstanding service in helping with our home loan and successful closing. We are first time home buyers and Marco has done a great job in directing us properly throughout the process. He was efficient in getting the things done on a timely manner. We highly recommend him for anyone in search for a dependable loan officer.', :rating => 5 }
+@test.save
+
+User.create(username: 'btimulty', email: 'btimulty@gmail.com', password: 'Cardinal88!')
+
+@test = Testimonial.new
+@test.attributes = { :user_id => 2, :description => 'We had a very aggressive closing schedule. With the hot real estate market I was concerned about being able to meet these timelines. When I spoke with Marco he told me he could meet my closing timelines. With all of the paperwork that\'s required, Marco was there to answer my questions. At the end of the day, Marco met all of the timelines, is easy to work with - we had a successful closing.  I would highly recommend Marco.', :rating => 5 }
+@test.save
+User.create(username: 'jmead111', email: 'jmead111@gmail.com', password: 'Cardinal88!')
+@test = Testimonial.new
+@test.attributes = { :user_id => 3, :description => 'Josh was extremely helpful in guiding us through our mortgage process. He answered all our questions and concerns thoroughly. He was available to us during all hours of the day. It was a great experience working with him.', rating: 4 }
+@test.save
+
