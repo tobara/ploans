@@ -1,4 +1,4 @@
-
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size">
 <div class="mbr-section__row row" id="article_container">
     <%= stylesheet_link_tag 'article.css' %>
     <%= stylesheet_link_tag 'article_style.css' %>
@@ -13,7 +13,7 @@
             <div class="ca-item-main">
             <br>
               <div class="ca-icon" style="background:url(<%= asset_path("#{article.landing_img_path}") %>) no-repeat center center;"></div>
-              <h3><%= article.title %></h3>
+              <h3 id="h2_correction"><%= article.title %></h3>
               <br>
               <h4>
                 <span class="ca-quote">&ldquo;</span>
@@ -21,10 +21,10 @@
                 <span> <%= article.line_preview %>... </span>
               </h4>
 
-               <script type="text/javascript">
-                var windowSize = window.availWidth;
+             <!--   <script type="text/javascript">
+                var windowSize = window.innerWidth;
               if (windowSize < 699) {
-                var strLink = "<%= "#{article.article_route}" %>"
+                var strLink = ""
                 var mwClass = "ca-mobile-more"
                 document.getElementById("art").setAttribute("href",strLink);
 
@@ -33,25 +33,25 @@
                 var atrLink = "#"
                 document.getElementById("art").setAttribute("href",atrLink);
               }
-              </script>
-              <a href="" id="art" class="ca-more">more...</a></div>
+              </script> -->
+              <a href="<%= "#{article.article_route}" %>" class="my-ca-more">more...</a></div>
 
 
 
-            <div class="ca-content-wrapper">
+<!--             <div class="ca-content-wrapper">
               <div class="ca-content">
-                <h6><%= article.title %></h6>
+                <h3 id="h2_correction">/h3>
                 <a href="#" class="ca-close">close</a>
                 <div class="ca-content-text">
-                 <p><%= article.para_preview %>...</p>
+                 <p>...</p>
 
                 </div>
                 <ul>
-                  <li><a href="<%= article.article_route %>">Read full article</a></li>
+                  <li><a href="">Read full article</a></li>
                   <li><a href="#">Share this</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <% end %>
@@ -74,3 +74,4 @@
   <%= stylesheet_link_tag    'default.self-31cb51844143a8b6001890d2c0de95a75fd1b.css' %>
 
 </div>
+</section>
