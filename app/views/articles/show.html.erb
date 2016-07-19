@@ -19,13 +19,13 @@
 
                 <!-- Author -->
                 <p class="lead">
-                    by <%= link_to 'DoctorLoans.io', root_path %>
+                    by <%= @article.author %> @ <%= link_to 'DoctorLoans.io', root_path %>
                 </p>
 
                 <hr>
 
                 <!-- Date/Time -->
-                <p>Posted on June 16, 2016 at 7:00 PM</p>
+                <p>Posted on <%= @article.article_date %></p>
 
                 <hr>
 
