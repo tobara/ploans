@@ -8,76 +8,70 @@
     <div class="mbr-section__container container">
         <div class="mbr-section__row row">
             <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+               <div class="buttons-container">
+               <%= image_tag 'thumbs/icon1.png', class: 'button-icon', alt: 'doctor link icon', style: "margin-top:-25px;" %>
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" id="button_con">
 
-                    <figure class="mbr-figure">
                     <a href="<%= asset_path(doctor_path) %>">
-                    <%= image_tag 'thumbs/thumb1.png', class: "mbr-figure__img", alt: 'doctor loan link logo' %>
-                        <figcaption>
-
-                        <p>Do you qualify?</p>
-
-                        </figcaption>
-                    </a>
-                    </figure>
-                    </div>
 
 
-
-
-
-
+        <div class="my_button_text"><strong>The Doctor Loan </strong></div>
+        <div class="hover-button-text"><strong>The Doctor Loan</strong></div>
+        <div class="link-description"> Do you qualify? </div>
+        <div class="link-description"> Check out our guidelines.</div>
+        <span class="icon-arrow"></span>
+                </div></a>
             </div>
-            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
-                <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" id="button_con">
-                    <figure class="mbr-figure">
-                    <a href="<%= asset_path(new_apply_path) %>">
-                    <%= image_tag 'thumbs/thumb2.png', class: "mbr-figure__img", alt: 'apply now link logo' %>
-                        <figcaption>
-
-                        <p>Let's get started.</p>
-
-                        </figcaption>
-                    </a>
-                    </figure>
-                </div>
-
-
-            </div>
-            <div class="clearfix visible-sm-block"></div>
-            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
-                <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" id="button_con">
-                    <figure class="mbr-figure">
-                    <a href="<%= asset_path(other_path) %>">
-                    <%= image_tag 'thumbs/thumb3.png', class: "mbr-figure__img", alt: 'other loan link logo' %>
-                        <figcaption>
-
-                        <p>Not a Doctor?</p>
-
-                        </figcaption>
-                    </a>
-                    </figure>
-                </div>
-
-
-            </div>
-
-            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
-                <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" id="button_con">
-                    <figure class="mbr-figure">
-                    <a href="<%= asset_path(new_contact_path) %>">
-                    <%= image_tag 'thumbs/thumb4.png', class: "mbr-figure__img", alt: 'contact us link logo', style: 'height:100%; width:100%' %>
-                        <figcaption>
-
-                        <p>Contact Us.</p>
-
-                        </figcaption>
-                        </a>
-                    </figure>
-                </div>
-
-
-
         </div>
-    </div>
+        <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+            <div class="buttons-container">
+                <%= image_tag 'thumbs/icon2.png', class: 'button-icon', alt: 'apply now link icon', style: 'margin-top:-25px;' %>
+                <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" id="button_con">
+
+                    <a href="<%= asset_path(new_apply_path) %>">
+
+                        <div class="my_button_text"><strong>Apply Now</strong></div>
+                        <div class="hover-button-text"><strong>Apply Now</strong></div>
+                        <div class="link-description">Provide some basic info.</div>
+                        <div class="link-description">And we can get started.</div>
+
+
+                </div></a>
+            </div>
+        </div>
+   <!--      <div class="clearfix visible-sm-block"></div> -->
+        <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+            <div class="buttons-container">
+                <%= image_tag 'thumbs/icon3.png', class: 'button-icon', alt: 'other guidelines link icon', style: 'margin-top:-25px;' %>
+                <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" id="button_con">
+
+                <a href="<%= asset_path(other_path) %>">
+                <div class="my_button_text"><strong>Other Options</strong></div>
+                <div class="hover-button-text"><strong>Other Options</strong></div>
+                   <div class="link-description">Not a Doctor?</div>
+                   <div class="link-description">You still have options.</div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
+                <div class="buttons-container">
+                <%= image_tag 'thumbs/icon4.png', class: 'button-icon', alt: 'lets connect', style: 'margin-top:-25px;' %>
+                    <div class="mbr-section__container mbr-section__container--center mbr-section__container--last" id="button_con">
+
+                    <a href="<%= asset_path(new_contact_path) %>">
+                    <div class="my_button_text"><strong>Let's Connect</strong></div>
+                    <div class="hover-button-text"><strong>Let's Connect</strong></div>
+                   <div class="link-description">Questions?</div>
+                   <div class="link-description">Comments?</div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+
+
+            </div>
+        </div>
 </section>
