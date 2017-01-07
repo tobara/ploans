@@ -3,15 +3,9 @@ class AppliesController < ApplicationController
   include StatesHelper
   before_action :set_apply, only: [:show, :edit, :update, :destroy]
 
-
   def index
     @applies = Apply.all
   end
-
-
-  def show
-  end
-
 
   def new
     add_breadcrumb "Apply Now"
@@ -20,11 +14,6 @@ class AppliesController < ApplicationController
           keywords: 'mortgage, refinance, Apply now, pre approval, pre qualify'
     @apply = Apply.new
   end
-
-
-  def edit
-  end
-
 
   def create
     @apply = Apply.new(apply_params)
@@ -39,20 +28,6 @@ class AppliesController < ApplicationController
     end
   end
 
-
-  # def update
-  #   respond_to do |format|
-  #     if @apply.update(apply_params)
-  #       format.html { redirect_to @apply, notice: 'Apply was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @apply }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @apply.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
-
   def destroy
     @apply.destroy
     respond_to do |format|
@@ -60,9 +35,6 @@ class AppliesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-
-
 
   private
 

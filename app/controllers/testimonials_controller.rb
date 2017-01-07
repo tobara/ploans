@@ -17,8 +17,6 @@ class TestimonialsController < ApplicationController
     @user = current_user
     @testimonial = Testimonial.new(testimonial_params)
     @testimonial.user = @user
-
-
     if @testimonial.save
       flash[:notice] = "Testimonial added successfully"
       redirect_to root_path
@@ -31,7 +29,6 @@ class TestimonialsController < ApplicationController
   def update
     @testimonial = Testimonial.find(params[:id])
     @testimonial.update(testimonial_params)
-
     if @testimonial.save
       flash[:notice] = 'Testimonial updated successfully'
       redirect_to root_path
@@ -44,7 +41,6 @@ class TestimonialsController < ApplicationController
   def destroy
     @testimonial = Testimonial.find(params[:id])
     @testimonial.destroy
-
     redirect_to root_path, notice: "Testimonial Deleted."
   end
 

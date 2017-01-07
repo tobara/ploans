@@ -10,9 +10,7 @@ class WelcomeController < ApplicationController
     @articles = Article.all
     @screen = TTY::Screen.new
     render :index
-    # @user_rating = @testimonials.average(:rating).to_i
   end
-
 
   def authorize_user!
     user = Bourbon.find(params[:id]).user
