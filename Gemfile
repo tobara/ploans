@@ -54,6 +54,7 @@ group :development, :test do
   gem 'shoulda-matchers', require: false
   gem 'byebug'
   gem 'quiet_assets'
+  gem 'coveralls'
 end
 
 group :development do

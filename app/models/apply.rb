@@ -68,5 +68,5 @@ class Apply < ActiveRecord::Base
       ['Wisconsin', 'WI'],
       ['Wyoming', 'WY']
     ]
-end
+  end
 end
