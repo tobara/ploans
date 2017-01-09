@@ -55,6 +55,7 @@ group :development, :test do
   gem 'byebug'
   gem 'quiet_assets'
   gem 'coveralls'
+  gem 'database_cleaner'
 end
 
 group :development do
